@@ -41,5 +41,5 @@ Where I would take this project next.
 - [ ] Add validation to the form fields
 - [ ] Extend the .eslintrc (Use the Air B n B .eslintrc as a starting point if there is no internal JavaScript code style guide)
 - [ ] Add hot module reloading for faster development
-- [x] (I made this change after writing the though down) Maybe change the output. The React render could look for a `div` with an id of `hcard`. We could also output to an `hcard` folder, with the bundles renamed to `hcard.js` and `hcard.css` (and drop the whole index.html file in the folder).
+- [x] Maybe change the output. The React render could look for a `div` with an id of `hcard`. We could also output to an `hcard` folder, with the bundles renamed to `hcard.js` and `hcard.css` (and drop the whole index.html file in the folder).
 - [x] Version control :)
