@@ -1,0 +1,7 @@
+// media query helpers
+//$point: px value [at which point the media query is triggered]
+above($point = $grid-float-breakpoint)
+  @media screen and (min-width: $point) {block}
+
+below($point = $grid-float-breakpoint)
+  @media screen and (max-width: $point) {block}
