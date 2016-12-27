@@ -3,6 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var path = require('path')
 // Define a prod environment for redux and minification
 var PROD = (process.env.NODE_ENV === 'production')
+var distPath = 'dist' // change this to be the assest project specifc path from index.html
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -10,9 +11,9 @@ module.exports = {
     path.join(__dirname, 'src', 'entry.js'),
   ],
   output: {
-    path: path.join(__dirname, 'dist', 'hCard'),
+    path: path.join(__dirname, distPath, 'hCard'),
     filename: 'hCard.js',
-    publicPath: '/dist/hCard/',
+    publicPath: '/' + distPath + '/hCard/',
   },
   plugins: [
     new webpack.NoErrorsPlugin(),

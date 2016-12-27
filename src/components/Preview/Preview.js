@@ -14,7 +14,7 @@ const Preview = ({ avatarPreviewSrc, details }) => {
               <span>{details.GIVEN_NAME}</span> <span>{details.SURNAME}</span>
             </h3>
             <figure className={styles.avatarFigure}>
-              <img className={styles.avatarImage} src={avatarPreviewSrc || avatarDefault} />
+              <img className={styles.avatarImage} src={avatarPreviewSrc || `./${avatarDefault}`} />
             </figure>
           </header>
           <ul className={styles.list}>
