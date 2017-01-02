@@ -40,11 +40,9 @@ HCard.propTypes = {
   data: PropTypes.object,
 }
 
-function mapStateToProps(state) {
-  return {
-    avatar: state.editDetails.avatar,
-    details: state.editDetails.details,
-  }
-}
+const mapStateToProps = ({ editDetails }) => ({
+  avatar: editDetails.avatar,
+  details: editDetails.details,
+})
 
 export default connect(mapStateToProps)(HCard)
