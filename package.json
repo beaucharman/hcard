@@ -4,13 +4,13 @@
   "description": "hCard is a simple, open format for publishing people, companies and organisations.",
   "main": "index.js",
   "scripts": {
-    "test": "",
-    "clean": "rm -rf dist/*",
-    "lint": "eslint -c .eslintrc --ext .js src",
     "build": "npm run clean && npm run webpack --progress --colors",
-    "webpack": "webpack --progress --colors ",
+    "clean": "rm -rf dist/*",
     "dev": "npm run build && webpack --progress --colors  -w",
-    "release": "npm run clean && NODE_ENV=production webpack --progress --colors -p"
+    "lint": "eslint -c .eslintrc --ext .js src",
+    "release": "npm run clean && NODE_ENV=production webpack --progress --colors -p",
+    "test": "",
+    "webpack": "webpack --progress --colors "
   },
   "author": "Beau Charman @beaucharman",
   "license": "ISC",

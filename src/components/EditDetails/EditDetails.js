@@ -30,13 +30,13 @@ const EditDetails = (props) => {
   }
 
   const personalDetailsItems = Object.keys(constants.PERSONAL).map((key) => ({
-    hangleOnChange: handleInputChange.bind(this, key),
+    hangleOnChange: (event) => handleInputChange(key, event),
     identifier: key,
     label: constants.PERSONAL[key],
   }))
 
   const addressDetailsItems = Object.keys(constants.ADDRESS).map((key) => ({
-    hangleOnChange: handleInputChange.bind(this, key),
+    hangleOnChange: (event) => handleInputChange(key, event),
     identifier: key,
     label: constants.ADDRESS[key],
   }))
